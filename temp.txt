@@ -1,0 +1,37 @@
+inline void AddMod(ZZ& x, const ZZ& a, const ZZ& b, const ZZ& n)
+inline ZZ AddMod(const ZZ& a, const ZZ& b, const ZZ& n)
+void AddMod(ZZ& x, const ZZ& a, long b, const ZZ& n);
+inline ZZ AddMod(const ZZ& a, long b, const ZZ& n)
+inline void AddMod(ZZ& x, long a, const ZZ& b, const ZZ& n)
+inline ZZ AddMod(long a, const ZZ& b, const ZZ& n)
+
+inline void SubMod(ZZ& x, const ZZ& a, const ZZ& b, const ZZ& n)
+inline ZZ SubMod(const ZZ& a, const ZZ& b, const ZZ& n)
+void SubMod(ZZ& x, const ZZ& a, long b, const ZZ& n);
+inline ZZ SubMod(const ZZ& a, long b, const ZZ& n)
+void SubMod(ZZ& x, long a, const ZZ& b, const ZZ& n);
+inline ZZ SubMod(long a, const ZZ& b, const ZZ& n)
+
+inline void MulMod(ZZ& x, const ZZ& a, const ZZ& b, const ZZ& n)
+inline ZZ MulMod(const ZZ& a, const ZZ& b, const ZZ& n)
+inline void MulMod(ZZ& x, const ZZ& a, long b, const ZZ& n)
+inline ZZ MulMod(const ZZ& a, long b, const ZZ& n)
+inline void MulMod(ZZ& x, long a, const ZZ& b, const ZZ& n)
+inline ZZ MulMod(long a, const ZZ& b, const ZZ& n)
+
+inline void SqrMod(ZZ& x, const ZZ& a, const ZZ& n)
+inline ZZ SqrMod(const ZZ& a, const ZZ& n)
+
+inline ZZ InvMod(const ZZ& a, const ZZ& n)
+void InvMod(ZZ& x, const ZZ& a, const ZZ& n);
+
+void PowerMod(ZZ& x, const ZZ& a, const ZZ& e, const ZZ& n);
+inline void LowLevelPowerMod(ZZ& x, const ZZ& a, const ZZ& e, const ZZ& n)
+inline ZZ PowerMod(const ZZ& a, const ZZ& e, const ZZ& n)
+inline void PowerMod(ZZ& x, const ZZ& a, long e, const ZZ& n)
+inline ZZ PowerMod(const ZZ& a, long e, const ZZ& n)
+
+long Jacobi(const ZZ& a, const ZZ& n);
+
+void SqrRootMod(ZZ& x, const ZZ& a, const ZZ& n);
+inline ZZ SqrRootMod(const ZZ& a, const ZZ& n)
