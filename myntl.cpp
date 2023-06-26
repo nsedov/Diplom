@@ -431,8 +431,6 @@ void define_mat(std::string const& name) {
 
         // CRT
         .def("CRT", static_cast<long(*)(NTL::Mat<NTL::ZZ>&, NTL::ZZ&, const NTL::mat_zz_p&)>(&NTL::CRT))
-
-
         ;
 }
 
@@ -441,8 +439,8 @@ BOOST_PYTHON_MODULE(myntl) {
     define_ZZ("ZZ");
     //Vec
     define_vec<long>("VecLong");
-    define_vec<ZZ>("VecZZ");
+    define_vec<ZZ>("vec_ZZ");
     define_vec<double>("VecDouble");
     //Mat
-    define_mat<ZZ>("Mat_ZZ");
+    define_mat<ZZ>("mat_ZZ");
 }

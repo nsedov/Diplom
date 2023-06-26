@@ -29,7 +29,15 @@ std::string vec_to_string(const Vec<T>& v) {
     oss << v;
     return oss.str();
 }
-
+nikita@nikita:~/boosts/test3$ ./tst
+Time taken by NTL::solve: 166609799 microseconds
+The system is solvable.
+nikita@nikita:~/boosts/test3$ ./tst
+Time taken by NTL::solve: 165822917 microseconds
+The system is solvable.
+nikita@nikita:~/boosts/test3$ ./tst
+Time taken by NTL::solve: 165625432 microseconds
+The system is solvable.
 //GCD
 ZZ gcd_ZZ(const ZZ& a, const ZZ& b) {
     ZZ result;
