@@ -22,7 +22,7 @@ matrix, vector = read_from_file(filename)
 # Create the result vectors
 d = ZZ()
 x = vec_ZZ()
-x.SetLength(1000)
+x.SetLength(500)
 
 # Start the timer
 start = time.time()
